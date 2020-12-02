@@ -4,13 +4,13 @@
 
 
 import requests  # need this to get data from API
-import requests_cache
+#import requests_cache
 from tkinter import *  # need this for the GUI
 import datetime  # need this for time functions
 
 # caches data to avoid making too many calls to the API
-requests_cache.install_cache(cache_name='ergast_cache',
-                             expire_after=43200)
+#requests_cache.install_cache(cache_name='ergast_cache',
+                             #expire_after=43200)
 
 # gets the data from the API
 response = requests.get(url="https://ergast.com/api/f1/current.json")
